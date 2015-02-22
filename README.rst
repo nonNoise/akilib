@@ -24,17 +24,13 @@ AKI_I2C_AQM1602A	Ｉ２Ｃ接続小型キャラクタＬＣＤモジュール	ht
 	AKI_I2C_LPS25H
 	AKI_I2C_MCP3425
 
-
-=====  =====  ======
-   Inputs     Output
-------------  ------
-  A      B    A or B
-=====  =====  ======
-False  False  False
-True   False  True
-False  True   True
-True   True   True
-=====  =====  ======
+=====	=====	======
+A		B		A or B
+=====	=====	======
+False	False	False
+False	False	False
+False	False	False
+=====	=====	======
 
 
 - Edison
