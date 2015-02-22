@@ -14,7 +14,12 @@ akilib（アキリブ）プロジェクトは、秋葉原で購入出来る部�
 -----------------------------------------
 
 - Raspberry Pi
-	:AKI_I2C_AQM1602A:Ｉ２Ｃ接続小型キャラクタＬＣＤモジュール:http://akizukidenshi.com/catalog/g/gK-08896/:
+
+=====	=====	=====
+ライブラリ名	デバイス	購入URL
+=====	=====	=====
+AKI_I2C_AQM1602A	Ｉ２Ｃ接続小型キャラクタＬＣＤモジュール	http://akizukidenshi.com/catalog/g/gK-08896/
+	
 	AKI_I2C_HDC1000
 	AKI_I2C_LPS25H
 	AKI_I2C_MCP3425
