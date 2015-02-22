@@ -1,4 +1,9 @@
 
+############################################################
+#The MIT License (MIT)
+#Copyright (c) 2015 Yuta KItagami
+#Project:    https://github.com/nonNoise/akilib
+############################################################
 
 
 import mraa

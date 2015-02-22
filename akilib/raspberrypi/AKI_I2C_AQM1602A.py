@@ -1,4 +1,10 @@
-#import mraa
+
+############################################################
+#The MIT License (MIT)
+#Copyright (c) 2015 Yuta KItagami
+#Project:    https://github.com/nonNoise/akilib
+############################################################
+
 
 import smbus
 import time
@@ -12,12 +18,8 @@ class AKI_I2C_AQM1602A:
     def i2cReg(self,wr,addr,data):
         try:
             if(wr == "w"):
-                #time.sleep(0.1)
-                #print "W:0x%02X = 0x%04X" % (addr,data)
-                #return self.i2c.writeReg(addr,data)
                 return self.i2c.write_byte_data(I2C_ADDR,addr,data)
             elif(wr == "r"):
-                #return self.i2c.readReg(addr)
                 return self.i2c.read_byte(I2C_ADDR,addr)
             else :
                 return -1
