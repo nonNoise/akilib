@@ -1,1 +1,1 @@
-print "RasPi"
+print "Hi! I'm RaspberryPi"
