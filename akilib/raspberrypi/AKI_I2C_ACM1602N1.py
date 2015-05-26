@@ -3,11 +3,11 @@
 import smbus
 import time
 
-I2C_ADDR = 0x3E
+I2C_ADDR = 0x50
 
-class AKI_I2C_AQM1602A:
+class AKI_I2C_ACM1602N1:
     def __init__(self):
-        print "AKI_I2C_AQM1602A"
+        print "AKI_I2C_ACM1602N1"
         self.i2c = smbus.SMBus(1)
     def i2cReg(self,wr,addr,data):
         try:
@@ -23,34 +23,15 @@ class AKI_I2C_AQM1602A:
                 return -1
         except IOError, err:
             print "No ACK!"
-            #time.sleep(0.1)
-            #self.i2cReg(wr,addr,data)
+            time.sleep(0.1)
+            self.i2cReg(wr,addr,data)
     def Init_LCD(self):
+        # "Clear Display"
+        self.i2cReg("w",0x00,0x01)
+        time.sleep(0.20)
         # "Function set"
         self.i2cReg("w",0x00,0x38)
         time.sleep(0.1)
-        # "Function set"
-        self.i2cReg("w",0x00,0x39)
-        time.sleep(0.1)
-        # "Internal OSC frequency "
-        self.i2cReg("w",0x00,0x14)
-        time.sleep(0.1)
-        # "Contrast set "
-        self.i2cReg("w",0x00,0x7E)
-        time.sleep(0.1)
-        # "Power/ICON/Contrast control "
-        self.i2cReg("w",0x00,0x54)
-        time.sleep(0.1)
-        # "Follower control "
-        self.i2cReg("w",0x00,0x6C)
-        time.sleep(0.1)
-
-        time.sleep(0.50)
-        # "Function set"
-        self.i2cReg("w",0x00,0x38)
-        time.sleep(0.1)
-
-
         # "Clear Display"
         self.i2cReg("w",0x00,0x01)
         time.sleep(0.20)
@@ -71,13 +52,13 @@ class AKI_I2C_AQM1602A:
         #time.sleep(0.3)
 
     def WriteChar(self,c):
-        self.i2cReg("w",0x40,c )
+        self.i2cReg("w",0x80,c )
 
     def WriteStr(self,s,t=0):
         #print s
         for c in s :        
             #print ord(c)
-            self.i2cReg("w",0x40,ord(c))
+            self.i2cReg("w",0x80,ord(c))
             time.sleep(t)
 
     def NewClearDisplay(self,pos,time):

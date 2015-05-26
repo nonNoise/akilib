@@ -1,20 +1,30 @@
-#import mraa
 
-import smbus
+############################################################
+#The MIT License (MIT)
+#Copyright (c) 2015 Yuta KItagami
+#Project:    https://github.com/nonNoise/akilib
+############################################################
+
+import mraa
 import time
-
-I2C_ADDR = 0x5C
+from struct import *
 
 class AKI_I2C_LPS25H:
-    def __init__(self):
+    def __init__(self,addr):
         print "AKI_I2C_LPS25H"
-        self.i2c = smbus.SMBus(1)
+        I2C_PORT = 6
+        self.I2C_ADDR = addr
+        self.i2c = mraa.I2c(I2C_PORT)
+        self.i2c.address(self.I2C_ADDR)
     def i2cReg(self,wr,addr=0x00,data=0x00):
         try:
             if(wr == "w"):
-                return self.i2c.write_byte_data(I2C_ADDR,addr,data)
+                #print "W:0x%02X = 0x%02X" % (addr,data)
+                return self.i2c.writeReg(addr,data)
             elif(wr == "r"):
-                return self.i2c.read_byte_data(I2C_ADDR,addr)
+                tmp = self.i2c.readReg(addr)
+                #print "R:0x%02X = 0x%02X" % (addr,tmp)
+                return tmp
             else :
                 return -1
         except IOError, err:
