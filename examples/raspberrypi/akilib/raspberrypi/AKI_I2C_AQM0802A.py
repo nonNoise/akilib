@@ -3,11 +3,12 @@
 import smbus
 import time
 
-I2C_ADDR = 0x50
 
-class AKI_I2C_ACM1602N1:
+I2C_ADDR = 0x3e
+
+class AKI_I2C_AQM0802A:
     def __init__(self):
-        print "AKI_I2C_ACM1602N1"
+        print "AKI_I2C_AQM0802A"
         self.i2c = smbus.SMBus(1)
     def i2cReg(self,wr,addr,data):
         try:
