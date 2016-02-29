@@ -24,28 +24,28 @@ class AKI_I2C_AQM0802A:
     def Init_LCD(self):
         # "Function set"
         self.i2cReg("w",0x00,0x38)
-        time.sleep(0.20)
+        time.sleep(0.10)
         # "Function set"
         self.i2cReg("w",0x00,0x39)
-        time.sleep(0.20)
+        time.sleep(0.10)
         # "Internal OSC frequency"
         self.i2cReg("w",0x00,0x14)
-        time.sleep(0.20)
+        time.sleep(0.10)
         # "Contrast Set"
         self.i2cReg("w",0x00,0x70)
-        time.sleep(0.20)
+        time.sleep(0.10)
         # "Power/ICON Set"
         self.i2cReg("w",0x00,0x56)
-        time.sleep(0.20)
+        time.sleep(0.10)
         # "Follower control"
         self.i2cReg("w",0x00,0x6c)
-        time.sleep(0.20)
+        time.sleep(0.10)
         # "Function set"
         self.i2cReg("w",0x00,0x38)
-        time.sleep(0.20)
+        time.sleep(0.10)
         # "Display ON/OFF"
         self.i2cReg("w",0x00,0x0c)
-        time.sleep(0.20)
+        time.sleep(0.10)
 
 
     def ClearDisplay(self):
@@ -61,13 +61,13 @@ class AKI_I2C_AQM0802A:
         #time.sleep(0.3)
 
     def WriteChar(self,c):
-        self.i2cReg("w",0x80,c )
+        self.i2cReg("w",0x40,c )
 
     def WriteStr(self,s,t=0):
         #print s
         for c in s :        
             #print ord(c)
-            self.i2cReg("w",0x80,ord(c))
+            self.i2cReg("w",0x40,ord(c))
             time.sleep(t)
 
     def NewClearDisplay(self,pos,time):
