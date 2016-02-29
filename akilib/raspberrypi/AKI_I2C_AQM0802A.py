@@ -39,11 +39,12 @@ class AKI_I2C_AQM0802A:
         # "Follower control"
         self.i2cReg("w",0x00,0x6c)
         time.sleep(0.20)
+
         # "Function set"
         self.i2cReg("w",0x00,0x38)
         time.sleep(0.20)
         # "Display ON/OFF"
-        self.i2cReg("w",0x00,0x0c)
+        self.i2cReg("w",0x00,0x0d)
         time.sleep(0.20)
 
 
