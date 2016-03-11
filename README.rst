@@ -56,9 +56,13 @@ akilibプロジェクトは、秋葉原で購入出来る部品をライブラ�
 - Raspberry Pi
 
     - AKI_I2C_AQM1602A
-    - AKI_I2C_HDC1000
-    - AKI_I2C_LPS25H
 
+
+    - AKI_I2C_HDC1000
+    https://github.com/nonNoise/akilib/blob/master/document/raspberrypi/AKI_I2C_HDC1000.rst
+
+    - AKI_I2C_LPS25H
+    https://github.com/nonNoise/akilib/blob/master/document/raspberrypi/AKI_I2C_LPS25H.rst
 
 
 
