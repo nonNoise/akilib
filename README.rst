@@ -1,9 +1,11 @@
 =========================================================
-akilib Project
+Python Hardware Library
 =========================================================
 
-2015.02.23 まだ準備中です。
-2015.05.27 Edison用ライブラリを数点追加。
+
+This Library is Hardware Library. and You can buy parts in Japan Akihabara .
+
+Akihabara Library =>  akilib
 
 
 
@@ -18,106 +20,33 @@ akilibプロジェクトは、秋葉原で購入出来る部品をライブラ�
 -----------------------------------------
 
 - Edison
-    - AKI_AQM1248A
-        - AQM1248A 超小型グラフィックＬＣＤ
-        - http://akizukidenshi.com/catalog/g/gK-07007/
-        - ver0.8 α
-        - SPI接続
-    - AKI_I2C_AQM0802A
-        - AQM0802A 小型キャラクタＬＣＤモジュール　８ｘ２行
-        - http://akizukidenshi.com/catalog/g/gP-06669/
-        - ver 1.0
-        - I2C接続
+
     - AKI_I2C_HDC1000
-        - HDC1000 温湿度センサーモジュール
-        - http://akizukidenshi.com/catalog/g/gM-08775/
-        - ver1.0
-        - I2C接続
     - AKI_I2C_L3GD20
-        - L3GD20 3軸ジャイロセンサ
-        - http://akizukidenshi.com/catalog/g/gK-06779/
-        - ver1.0
-        - I2C接続
     - AKI_I2C_LPS25H
-        - LPS25H 気圧センサー
-        - http://akizukidenshi.com/catalog/g/gK-08338/
-        - ver1.0
-        - I2C接続
-    - AKI_I2C_S11059
-        - S11059 カラーセンサー
-        - http://akizukidenshi.com/catalog/g/gK-08316/
-        - ver1.0
-        - I2C接続
+    - AKI_I2C_LIS3DH
+    - AKI_I2C_MCP23017
     - AKI_I2C_SO1602AWYB
-        - SO1602AWYB OLED 有機ＥＬキャラクタディスプレイモジュール　１６ｘ２行
-        - http://akizukidenshi.com/catalog/g/gP-08278/
-        - ver 1.0
-        - I2C接続
-    - AKI_SG12864ASLB
-        - SG12864ASLB グラフィック液晶表示器　１２８ｘ６４ドット
-        - http://akizukidenshi.com/catalog/g/gP-02159/
-        - ver 1.0
-        - GPIO接続
+    - AKI_I2C_S11059
+    - AKI_I2C_AQM0802A
+    - AKI_SPI_AQM1248A
+    - AKI_GPIO_SG12864ASLB
+
+
 
 
 
 - Raspberry Pi
+
     - AKI_I2C_AQM1602A
-        - Ｉ２Ｃ接続小型キャラクタＬＣＤモジュール
-        - http://akizukidenshi.com/catalog/g/gK-08896/   
-        - ver 0.3 β
-        - I2C接続
     - AKI_I2C_HDC1000
-        - 温湿度センサーモジュール
-        - http://akizukidenshi.com/catalog/g/gM-08775/
-        - ver1.0
-        - I2C接続
     - AKI_I2C_LPS25H
-        - 圧力センサーモジュール
-        - http://akizukidenshi.com/catalog/g/gK-08338/
-        - ver1.0
-        - I2C接続
-    - AKI_I2C_MCP3425
-        - １６Ｂｉｔ　ＡＤ変換モジュール
-        -  http://akizukidenshi.com/catalog/g/gK-08018/
-        - ver 1.0
-        - I2C接続
 
 
 
 
-
-
-※バージョン表記に関して
-ver 1.0以下の物は、ひとまず動くけど、たまに動かない。所謂、難有り状態です。
-
-
-2.ToDo
+3.License
 -----------------------------------------
-
-とりあえず公開版です。
-
-ソースの整備もできてません。
-
-回路図もライブラリに含めたいです。
-
-うまく行けばmraaでRasPiもEdisonも同じライブラリで行けるかも。
-
-ライブラリが某店に偏るのも如何なものかと悩み中。他店展開も考え中。
-
-作ってほしいライブラリが有りましたら :Twitter:@nonNoise まで。
-
-
-3.ライセンスに関して
------------------------------------------
-
-『自由で無保証で勝手に使っていいよ、ただし作者明記はちゃんとしてね』  的なライセンスであるMITライセンスを採用しました。
-
-ソースには以下のような作者及び協力者の名前を付けたいと思います。
-
-商用に使用する際も、以下の表記は削除しないでください。
-
 
     The MIT License (MIT)
-    
-    Copyright (c) 2015 Yuta KItagami
+    Copyright (c) 2015 Yuta KItagami (kitagami@artifactnoise.com,@nonnoise)

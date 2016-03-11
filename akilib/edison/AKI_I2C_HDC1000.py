@@ -10,18 +10,12 @@ import mraa
 import time
 from struct import *
 
-
-I2C_PORT = 6
-I2C_ADDR = 0x40
-
 class AKI_I2C_HDC1000:
-
-    def __init__(self):
+    def __init__(self,port):
         print "== HDC1000 Open =="      
-        print "* I2C Port:%d" % I2C_PORT    
-        print "* I2C Addr:0x%2x" % I2C_ADDR 
-        print "=" *20
+        I2C_PORT = port
         self.i2c = mraa.I2c(I2C_PORT)
+        I2C_ADDR = 0x40
         self.i2c.address(I2C_ADDR)
 
     def i2cReg(self,wr,addr,data=0x0000):
