@@ -22,7 +22,7 @@ Akihabara Library =>  akilib
 
     > pip install akilib
 
- - RaspberryPi
+- RaspberryPi
 
     > sudo apt-get install python-pip
 
