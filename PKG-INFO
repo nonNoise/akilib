@@ -1,0 +1,60 @@
+Metadata-Version: 1.1
+Name: akilib
+Version: 2.0
+Summary: This Library is Hardware Library. and You can buy parts in Japan Akihabara.
+Home-page: https://github.com/nonNoise/akilib
+Author: Yuta Kitagami
+Author-email: kitagami@artifactnoise.com
+License: MIT
+Description: This package is for those that know the local ip in linux.
+
+Python Hardware Library
+
+This Library is Hardware Library. and You can buy parts in Japan Akihabara .
+
+Akihabara Library => akilib
+
+0.Introduction
+akilibプロジェクトは、秋葉原で購入出来る部品をライブラリ化し、次世代であるシングルコンピュータで手軽に取り扱えるようにするプロジェクトである。
+現在は、Pythonが主であり、サブでC言語を取り入れているが、皆様のご支援によりRubyやGoに移植されることを願っています。
+
+1.Library
+
+    Edison
+            AKI_I2C_HDC1000
+            AKI_I2C_L3GD20
+            AKI_I2C_LPS25H
+            AKI_I2C_LIS3DH
+            AKI_I2C_MCP23017
+            AKI_I2C_SO1602AWYB
+            AKI_I2C_S11059
+            AKI_I2C_AQM0802A
+            AKI_SPI_AQM1248A
+            AKI_GPIO_SG12864ASLB
+
+    Raspberry Pi
+
+            AKI_I2C_AQM1602A
+            AKI_I2C_HDC1000
+            AKI_I2C_LPS25H
+
+2.License
+
+    The MIT License (MIT) Copyright (c) 2015 Yuta KItagami (kitagami@artifactnoise.com,@nonnoise)
+
+
+
+Keywords: Linux,IoT,Edison,Raspberrypi
+Platform: Linux,Edison,Raspberrypi
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: Edison
+Classifier: Operating System :: Raspberrypi
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development
