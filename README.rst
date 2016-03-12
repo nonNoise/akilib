@@ -11,6 +11,26 @@ This Library is Hardware Library. and You can buy parts in Japan Akihabara .
 
 Akihabara Library =>  akilib
 
+1.Install
+-------------------------------------------------------------------------------------------------------------
+
+- Edison
+
+    > opkg install python-pip
+
+    > pip install pip --upgrade
+
+    > pip install akilib
+
+ - RaspberryPi
+
+    > sudo apt-get install python-pip
+
+    > pip install pip --upgrade
+
+    > pip install akilib
+
+
 
 1.Library
 -------------------------------------------------------------------------------------------------------------
