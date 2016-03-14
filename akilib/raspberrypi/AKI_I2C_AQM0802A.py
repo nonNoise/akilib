@@ -1,13 +1,10 @@
-#import mraa
-
 import smbus
 import time
 
-I2C_ADDR = 0x50
-
+I2C_ADDR = 0x3e
 class AKI_I2C_AQM0802A:
     def __init__(self):
-        print "AKI_I2C_ACM1602N1"
+        print "AKI_I2C_AQM0802A"
         self.i2c = smbus.SMBus(1)
     def i2cReg(self,wr,addr,data):
         try:
@@ -19,33 +16,32 @@ class AKI_I2C_AQM0802A:
                 return -1
         except IOError, err:
             print "No ACK!"
-            self.i2cReg(wr,addr,data)
+            exit()
     def Init_LCD(self):
         # "Function set"
         self.i2cReg("w",0x00,0x38)
-        time.sleep(0.20)
+        time.sleep(0.10)
         # "Function set"
         self.i2cReg("w",0x00,0x39)
-        time.sleep(0.20)
+        time.sleep(0.10)
         # "Internal OSC frequency"
         self.i2cReg("w",0x00,0x14)
-        time.sleep(0.20)
+        time.sleep(0.10)
         # "Contrast Set"
         self.i2cReg("w",0x00,0x70)
-        time.sleep(0.20)
+        time.sleep(0.10)
         # "Power/ICON Set"
         self.i2cReg("w",0x00,0x56)
-        time.sleep(0.20)
+        time.sleep(0.10)
         # "Follower control"
         self.i2cReg("w",0x00,0x6c)
-        time.sleep(0.20)
-
+        time.sleep(0.10)
         # "Function set"
         self.i2cReg("w",0x00,0x38)
-        time.sleep(0.20)
+        time.sleep(0.10)
         # "Display ON/OFF"
-        self.i2cReg("w",0x00,0x0d)
-        time.sleep(0.20)
+        self.i2cReg("w",0x00,0x0c)
+        time.sleep(0.10)
 
 
     def ClearDisplay(self):
@@ -62,6 +58,7 @@ class AKI_I2C_AQM0802A:
 
     def WriteChar(self,c):
         self.i2cReg("w",0x40,c )
+	time.sleep(0.3)
 
     def WriteStr(self,s,t=0):
         #print s
@@ -74,7 +71,4 @@ class AKI_I2C_AQM0802A:
         self.WritePos(pos,0)
         self.WriteStr("                ",time)
         # "Clear Display"
-
-
-
 
