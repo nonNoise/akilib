@@ -10,10 +10,10 @@ import time
 from struct import *
 
 class AKI_I2C_LPS25H:
-    def __init__(self,addr):
+    def __init__(self,port):
         print "AKI_I2C_LPS25H"
-        I2C_PORT = 6
-        self.I2C_ADDR = addr
+        I2C_PORT = port
+        self.I2C_ADDR = 0x5C
         self.i2c = mraa.I2c(I2C_PORT)
         self.i2c.address(self.I2C_ADDR)
     def i2cReg(self,wr,addr=0x00,data=0x00):
@@ -43,7 +43,7 @@ class AKI_I2C_LPS25H:
         p = p | self.i2cReg("r",0x28) <<0
         p = p | self.i2cReg("r",0x29) <<8
         p = p | self.i2cReg("r",0x2A) <<16
-        mbar = p/4096
+        mbar = p/4096.00
         return mbar
 
     def Temp (self):

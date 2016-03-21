@@ -1,11 +1,7 @@
-#import mraa
-
 import smbus
 import time
 
-
 I2C_ADDR = 0x3e
-
 class AKI_I2C_AQM0802A:
     def __init__(self):
         print "AKI_I2C_AQM0802A"
@@ -20,7 +16,7 @@ class AKI_I2C_AQM0802A:
                 return -1
         except IOError, err:
             print "No ACK!"
-            self.i2cReg(wr,addr,data)
+            exit()
     def Init_LCD(self):
         # "Function set"
         self.i2cReg("w",0x00,0x38)
@@ -62,6 +58,7 @@ class AKI_I2C_AQM0802A:
 
     def WriteChar(self,c):
         self.i2cReg("w",0x40,c )
+	time.sleep(0.3)
 
     def WriteStr(self,s,t=0):
         #print s
@@ -74,7 +71,4 @@ class AKI_I2C_AQM0802A:
         self.WritePos(pos,0)
         self.WriteStr("                ",time)
         # "Clear Display"
-
-
-
 
