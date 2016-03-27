@@ -38,7 +38,6 @@ Akihabara Library =>  akilib
 
 - Edison
     - HDC1000       [ `AKI_I2C_HDC1000`_ ]
-
     - L3GD20        [ AKI_I2C_L3GD20 ]
     - LPS25H        [ AKI_I2C_LPS25H ]
     - LIS3DH        [ AKI_I2C_LIS3DH ]
@@ -51,7 +50,7 @@ Akihabara Library =>  akilib
     
 - RaspberryPi
     - AQM1602A      [ AKI_I2C_AQM1602A ]
-    - HDC1000       [ AKI_I2C_HDC1000 ]
+    - HDC1000       [ `AKI_I2C_HDC1000`_ ]
     - LPS25H        [ AKI_I2C_LPS25H ]
     - ADT7410       [ AKI_I2C_ADT7410 ]
 
