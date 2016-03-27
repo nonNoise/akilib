@@ -1,15 +1,16 @@
-
+from akilib import AKI_I2C_LPS25H
+#akilibのAKI_I2C_LPS25Hを使用する事を宣言
 import time
-from akilib.edison import AKI_I2C_LPS25H
-
-
-LPS25H = AKI_I2C_LPS25H.AKI_I2C_LPS25H(1)
-
+#timeライブラリを使用する事を宣言
+LPS25H = AKI_I2C_LPS25H(1)
+#LPS25HをI2C_1に接続していることを設定
 LPS25H.Init()
-time.sleep(0.01)
-
+#LPS25H特有の初期化を行います。
 while 1:
-    #print "T:0x%04X P:0x%04X " % (LPS25H.Press(),LPS25H.Temp())
-    print "P:%d T:%d " % (LPS25H.Press(),LPS25H.Temp())
+#無限ループ文 終了するときはキーボードでCtrl+Cを押します。    
+    print "P:%d" % LPS25H.Press()
+    #気圧データを取得します。単位はhPa(ヘクトパスカル)
+    print "T:%d" % LPS25H.Temp()
+    #温度データを取得します。単位は℃
     time.sleep(0.1)
-
+    #100ミリ秒待ちます

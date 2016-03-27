@@ -5,7 +5,12 @@ Python Hardware Library
 
 This Library is Hardware Library. and You can buy parts in Japan Akihabara .
 
+このライブラリは、秋葉原で購入出来る部品を使いやすくライブラリ化しました。
+
 Akihabara Library =>  akilib
+
+秋葉原で購入出来るライブラリ = akilib
+
 
 1.Install
 -------------------------------------------------------------------------------------------------------------
