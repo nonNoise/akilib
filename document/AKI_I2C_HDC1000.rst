@@ -16,7 +16,17 @@ AKI_I2C_HDC1000
 How to use 使い方
 -----------------------------------------------
 
-.. literalinclude:: ../examples/edison/HDC1000.py
+::
+
+    from akilib import AKI_I2C_HDC1000
+
+    x = AKI_I2C_HDC1000(1)
+
+    x.Config()
+
+    x.Temperature()
+
+    x.Humidity()
 
 
 
