@@ -37,7 +37,7 @@ Akihabara Library =>  akilib
 -------------------------------------------------------------------------------------------------------------
 
 - Edison
-    - HDC1000       [ 'AKI_I2C_HDC1000'_ ]
+    - HDC1000       [ `AKI_I2C_HDC1000`_ ]
 
     - L3GD20        [ AKI_I2C_L3GD20 ]
     - LPS25H        [ AKI_I2C_LPS25H ]
@@ -62,4 +62,4 @@ Akihabara Library =>  akilib
     Copyright (c) 2015 Yuta KItagami (kitagami@artifactnoise.com,@nonnoise)
 
 
-    .. _'AKI_I2C_HDC1000': https://github.com/nonNoise/akilib/blob/beta/document/AKI_I2C_HDC1000.rst
+.. _`AKI_I2C_HDC1000`: https://github.com/nonNoise/akilib/blob/beta/document/AKI_I2C_HDC1000.rst
