@@ -29,6 +29,8 @@ How to use 使い方
     x.Humidity()
 
 
+Date
+-----------------------------------------------
 
 :Project Title: AKI_I2C_HDC1000
 :Development Date:  2016/03/12

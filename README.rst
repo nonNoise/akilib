@@ -38,6 +38,8 @@ Akihabara Library =>  akilib
 
 - Edison
     - HDC1000       [ AKI_I2C_HDC1000 ]
+    :document/AKI_I2C_HDC1000.rst:
+
     - L3GD20        [ AKI_I2C_L3GD20 ]
     - LPS25H        [ AKI_I2C_LPS25H ]
     - LIS3DH        [ AKI_I2C_LIS3DH ]
