@@ -3,8 +3,6 @@ AKI_SPI_AQM1248A
 =================================================
 
 
-
-
 - AQM1248A 超小型グラフィックＬＣＤ
 - http://akizukidenshi.com/catalog/g/gK-07007/
 - ver0.8 α

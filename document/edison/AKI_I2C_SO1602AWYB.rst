@@ -3,10 +3,10 @@ AKI_I2C_SO1602AWYB
 =================================================
 
 
-    - SO1602AWYB OLED 有機ＥＬキャラクタディスプレイモジュール　１６ｘ２行
-    - http://akizukidenshi.com/catalog/g/gP-08278/
-    - ver 1.0
-    - I2C接続
+- SO1602AWYB OLED 有機ＥＬキャラクタディスプレイモジュール　１６ｘ２行
+- http://akizukidenshi.com/catalog/g/gP-08278/
+- ver 1.0
+- I2C接続
 
 
 
