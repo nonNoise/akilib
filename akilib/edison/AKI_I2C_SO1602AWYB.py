@@ -9,7 +9,7 @@ import mraa
 import time
 from struct import *
  
-
+ 
 class AKI_I2C_SO1602AWYB:
     def __init__(self,port):
         I2C_PORT = port
