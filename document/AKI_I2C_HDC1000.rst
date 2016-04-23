@@ -2,7 +2,6 @@
 AKI_I2C_HDC1000
 =================================================
 
-
 :Title: HDC1000 温湿度センサーモジュール
 :Device: Edison,RaspberryPi A+,B+,2B,3B
 :URL: http://akizukidenshi.com/catalog/g/gM-08775/

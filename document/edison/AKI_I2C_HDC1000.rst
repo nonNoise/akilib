@@ -2,7 +2,6 @@
 AKI_I2C_HDC1000
 =================================================
 
-
 :Title: HDC1000 温湿度センサーモジュール
 :URL: http://akizukidenshi.com/catalog/g/gM-08775/
 :Version: ver1.0

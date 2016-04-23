@@ -3,7 +3,6 @@ AKI_I2C_LPS25H
 =================================================
 
 
-
 :Title: LPS25H 気圧センサー
 :Device: Edison,RaspberryPi A+,B+,2B,3B
 :URL: http://akizukidenshi.com/catalog/g/gK-08338/
