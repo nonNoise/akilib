@@ -8,12 +8,13 @@
 import mraa
 import time
 from struct import *
-
-I2C_ADDR = 0x3C
-
+ 
+ 
 class AKI_I2C_SO1602AWYB:
-    def __init__(self):
-        self.i2c = mraa.I2c(6)  
+    def __init__(self,port):
+        I2C_PORT = port
+        I2C_ADDR = 0x3C
+        self.i2c = mraa.I2c(I2C_PORT)  
         self.i2c.address(I2C_ADDR)
     
     def Init_OLED(self):

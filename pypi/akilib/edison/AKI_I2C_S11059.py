@@ -13,9 +13,8 @@ from struct import *
 
 
 class AKI_I2C_S11059:
-    def __init__(self,addr):
-        I2C_PORT = 6
-        self.I2C_ADDR = addr
+    def __init__(self,I2C_PORT):
+        self.I2C_ADDR = 0x2A
         self.i2c = mraa.I2c(I2C_PORT)
         self.i2c.address(self.I2C_ADDR)
 
