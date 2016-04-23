@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # python setup.py register sdist upload
-from setuptools import setup
+# coding: utf-8
+from setuptools import setup, find_packages
+from akilib import * 
 
 setup(
     name = 'akilib',
@@ -10,7 +12,6 @@ setup(
     description = 'This Library is Hardware Library. and You can buy parts in Japan Akihabara .',
     license = 'MIT License',
     install_requires = [],
-    long_description=long_description,
     packages=['akilib','akilib/edison','akilib/raspberrypi'],
     author = ' Yuta KItagami',
     author_email = 'kitagami@artifactnoise.com',
