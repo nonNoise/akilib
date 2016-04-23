@@ -3,7 +3,7 @@
 from setuptools import setup
 
 import os
-f = open(os.path.join(os.path.dirname(__file__), 'README.rst'))
+f = open(os.path.join(os.path.dirname(__file__), 'pypi/README.rst'))
 long_description = f.read()
 f.close()
 
