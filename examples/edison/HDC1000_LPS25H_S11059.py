@@ -7,6 +7,8 @@ from akilib import AKI_I2C_S11059
 #akilibのAAKI_I2C_S11059を使用する事を宣言
 import time
 #timeライブラリ
+import datetime
+
 
 #================================================#
 HDC1000 = AKI_I2C_HDC1000(1)
@@ -26,6 +28,8 @@ S11059.Init()
 #================================================#
 while 1:
 #無限ループ文 終了するときはキーボードでCtrl+Cを押します。
+    d = datetime.datetime.today()
+    print d.strftime("%Y-%m-%d %H:%M:%S")
     print "%d'C / %d /" % (HDC1000.Temperature(),HDC1000.Humidity())
     #温度を取得します。表記は℃
     #湿度を取得します。表記は％
@@ -33,5 +37,8 @@ while 1:
     #気圧データを取得します。単位はhPa(ヘクトパスカル)
     #温度データを取得します。単位は℃
     print "R:0x%02X G:0x%02X B:0x%02X IR:0x%02X " % S11059.RGBISens()
-    print "-" *20
-    time.sleep(0.5)
+    print "-" *20S11059.RGBISens()
+    f = open("deta.csv","w+")
+    f.write("%s,%d,%d,%d,%d,%d,%d,%d,%d") % (d.strftime("%Y-%m-%d %H:%M:%S"),HDC1000.Temperature(),HDC1000.Humidity(),LPS25H.Press(),LPS25H.Temp(),S11059.RGBISens())
+    f.close()
+    time.sleep(5)
