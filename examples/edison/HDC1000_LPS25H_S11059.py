@@ -39,6 +39,6 @@ while 1:
     print "R:0x%02X G:0x%02X B:0x%02X IR:0x%02X " % S11059.RGBISens()
     print "-" *20
     f = open("deta.csv","w+")
-    f.write("%s,%d,%d,%d,%d,0x%02X,0x%02X,0x%02X,0x%02X") % (d.strftime("%Y-%m-%d %H:%M:%S"),HDC1000.Temperature(),HDC1000.Humidity(),LPS25H.Press(),LPS25H.Temp(),S11059.RGBISens())
+    f.write("%s,%d,%d,%d,%d,0x%02X,0x%02X,0x%02X,0x%02X" % (d.strftime("%Y-%m-%d %H:%M:%S"),HDC1000.Temperature(),HDC1000.Humidity(),LPS25H.Press(),LPS25H.Temp(),S11059.RGBISens()))
     f.close()
     time.sleep(5)
