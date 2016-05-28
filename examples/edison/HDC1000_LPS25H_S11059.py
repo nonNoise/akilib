@@ -46,4 +46,4 @@ while 1:
     f.write("%d,%d,%d,%d" % S11059.RGBISens())
     f.write("\n")
     f.close()
-    time.sleep(10)
+    time.sleep(60)
