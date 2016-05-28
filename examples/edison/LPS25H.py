@@ -1,7 +1,7 @@
 # -*- encoding:utf8 -*-
 from akilib import AKI_I2C_LPS25H
 #akilibのAKI_I2C_LPS25Hを使用する事を宣言
-import time  
+import time 
 #timeライブラリを使用する事を宣言
 LPS25H = AKI_I2C_LPS25H(1)
 #LPS25HをI2C_1に接続していることを設定
