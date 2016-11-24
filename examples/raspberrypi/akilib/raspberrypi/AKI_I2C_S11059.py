@@ -12,7 +12,7 @@ from struct import *
 
 class AKI_I2C_S11059:
     def __init__(self,I2C_PORT):
-        self.I2C_ADDR = 0x25
+        self.I2C_ADDR = 0x2A
         self.i2c = smbus.SMBus(1)
 
     def i2cReg(self,wr,addr,data=0x00):
