@@ -9,7 +9,7 @@ f.close()
 
 setup(
     name = 'akilib',
-    version = '2.0.9',
+    version = '2.1.1',
     url="https://github.com/nonNoise/akilib",
     keywords = ('Edison','Raspberry','IoT','akilib'),
     description = 'This Library is Hardware Library. and You can buy parts in Japan Akihabara .',

@@ -30,14 +30,13 @@ if "edison" in plat :
 #-----------------------------------------#
 # Raspberry Pi platform
 #-----------------------------------------#
-if "armv7l" in plat :
+if "armv7l" or "armv6l"  in plat :
     #print "Platform is RaspberryPi "
     from raspberrypi.AKI_I2C_MCP3425 import AKI_I2C_MCP3425
     from raspberrypi.AKI_I2C_LPS25H import AKI_I2C_LPS25H
     from raspberrypi.AKI_I2C_HDC1000 import AKI_I2C_HDC1000
     from raspberrypi.AKI_I2C_AQM1602A import AKI_I2C_AQM1602A
-    from raspberrypi.AKI_I2C_AQM0802A import AKI_I2C_AQM0802A
     from raspberrypi.AKI_I2C_ACM1602N1 import AKI_I2C_ACM1602N1
     from raspberrypi.AKI_I2C_ADT7410 import AKI_I2C_ADT7410
     #from raspberrypi.AKI_GPIO_SC1602BSLB import AKI_GPIO_SC1602BSLB
-
+    from raspberrypi.AKI_I2C_S11059 import AKI_I2C_S11059

@@ -31,7 +31,7 @@ if "edison" in plat :
 # Raspberry Pi platform
 #-----------------------------------------#
 if "armv7l" or "armv6l"  in plat :
-    print "Platform is RaspberryPi "
+    #print "Platform is RaspberryPi "
     from raspberrypi.AKI_I2C_MCP3425 import AKI_I2C_MCP3425
     from raspberrypi.AKI_I2C_LPS25H import AKI_I2C_LPS25H
     from raspberrypi.AKI_I2C_HDC1000 import AKI_I2C_HDC1000

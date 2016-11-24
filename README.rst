@@ -47,13 +47,14 @@ Akihabara Library =>  akilib
     - AQM0802A      [ AKI_I2C_AQM0802A ]
     - AQM1248A      [ AKI_SPI_AQM1248A ]
     - SG12864ASLB   [ AKI_GPIO_SG12864ASLB ]
-    
+
 - RaspberryPi
     - AQM1602A      [ AKI_I2C_AQM1602A ]
     - HDC1000       [ `AKI_I2C_HDC1000`_ ]
     - LPS25H        [ `AKI_I2C_LPS25H`_ ]
     - ADT7410       [ AKI_I2C_ADT7410 ]
-
+    - S11059        [ AKI_I2C_S11059 ]
+    
 2.License
 -------------------------------------------------------------------------------------------------------------
 
@@ -63,8 +64,3 @@ Akihabara Library =>  akilib
 
 .. _`AKI_I2C_HDC1000`: https://github.com/nonNoise/akilib/blob/beta/document/AKI_I2C_HDC1000.rst
 .. _`AKI_I2C_LPS25H`: https://github.com/nonNoise/akilib/blob/beta/document/AKI_I2C_LPS25H.rst
-
-
-
-
-
