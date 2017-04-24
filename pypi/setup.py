@@ -9,9 +9,9 @@ f.close()
 
 setup(
     name = 'akilib',
-    version = '2.1.1',
+    version = '2.1.5',
     url="https://github.com/nonNoise/akilib",
-    keywords = ('Edison','Raspberry','IoT','akilib'),
+    keywords = ('Hardware','Edison','RaspberryPi','Raspberry','IoT','akilib'),
     description = 'This Library is Hardware Library. and You can buy parts in Japan Akihabara .',
     license = 'MIT License',
     install_requires = [],
@@ -22,6 +22,3 @@ setup(
     platforms = ['Linux'],
 )
 
-
-
- 

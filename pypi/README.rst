@@ -42,8 +42,9 @@ Akihabara Library =>  akilib
     - AQM0802A      [ AKI_I2C_AQM0802A ]
     - AQM1248A      [ AKI_SPI_AQM1248A ]
     - SG12864ASLB   [ AKI_GPIO_SG12864ASLB ]
-    
-- RaspberryPi
+
+- RaspberryPi A+.B+,2B,3B.Zero
+    - AQM0802A      [ AKI_I2C_AQM0802A ]
     - AQM1602A      [ AKI_I2C_AQM1602A ]
     - HDC1000       [ AKI_I2C_HDC1000 ]
     - LPS25H        [ AKI_I2C_LPS25H ]
@@ -54,4 +55,4 @@ Akihabara Library =>  akilib
 -------------------------------------------------------------------------------------------------------------
 
     The MIT License (MIT)
-    Copyright (c) 2015 Yuta KItagami (kitagami@artifactnoise.com,@nonnoise)
+    Copyright (c) 2015 Yuta Kitagami (kitagami@artifactnoise.com,@nonnoise)

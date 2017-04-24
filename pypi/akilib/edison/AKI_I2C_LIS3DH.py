@@ -12,7 +12,7 @@ from struct import *
 class AKI_I2C_LIS3DH:
     def __init__(self,port):
         I2C_PORT = port
-        self.I2C_ADDR = 0x19
+        self.I2C_ADDR = 0x18
         self.i2c = mraa.I2c(I2C_PORT)
         self.i2c.address(self.I2C_ADDR)
 
@@ -29,13 +29,13 @@ class AKI_I2C_LIS3DH:
             return -1
     def WhoAmI(self):
         print "Who am I?: 0x%02X" % self.i2cReg("r",0x0F)
-        
+
     def Init(self):
         #-- Init --#
-        self.i2cReg("w",0x20,0x7F)<<8
+        self.i2cReg("w",0x20,0x7F)
     def X(self):
-        return  self.i2cReg("r",0x28)
+        return  ((self.i2cReg("r",0x29)<<8 | self.i2cReg("r",0x28)))/16380.0
     def Y(self):
-        return (self.i2cReg("r",0x2B)<<8 | self.i2cReg("r",0x2A))
+        return ((self.i2cReg("r",0x2B)<<8 | self.i2cReg("r",0x2A)))/16380.0
     def Z(self):
-        return (self.i2cReg("r",0x2D)<<8 | self.i2cReg("r",0x2C))
+        return ((self.i2cReg("r",0x2D)<<8 | self.i2cReg("r",0x2C)))/16380.0
