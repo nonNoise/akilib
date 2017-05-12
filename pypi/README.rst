@@ -7,6 +7,9 @@ This Library is Hardware Library. and You can buy parts in Japan Akihabara .
 
 Akihabara Library =>  akilib
 
+https://github.com/nonNoise/akilib
+
+
 1.Install
 -------------------------------------------------------------------------------------------------------------
 
@@ -50,6 +53,7 @@ Akihabara Library =>  akilib
     - LPS25H        [ AKI_I2C_LPS25H ]
     - ADT7410       [ AKI_I2C_ADT7410 ]
     - S11059        [ AKI_I2C_S11059 ]
+    - SHT31         [ AKI_I2C_SHT31 ]
 
 2.License
 -------------------------------------------------------------------------------------------------------------

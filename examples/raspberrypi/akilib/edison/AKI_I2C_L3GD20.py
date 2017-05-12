@@ -31,18 +31,14 @@ class AKI_I2C_L3GD20:
             return -1
     def WhoAmI(self):
         print "Who am I?: 0x%02X" % self.i2cReg("r",0x0F)
-        
+
     def Init(self):
         #-- Init --#
         self.i2cReg("w",0x20,0x0F)
     def X(self):
-        return self.i2cReg("r",0x29)<<8 | self.i2cReg("r",0x28)
+
+        return (self.i2cReg("r",0x29)<<8 | self.i2cReg("r",0x28))*0.00875
     def Y(self):
-        return self.i2cReg("r",0x2B)<<8 | self.i2cReg("r",0x2A)
+        return (self.i2cReg("r",0x2B)<<8 | self.i2cReg("r",0x2A))*0.00875
     def Z(self):
-        return self.i2cReg("r",0x2D)<<8 | self.i2cReg("r",0x2C)
-
-
-
-
-
+        return (self.i2cReg("r",0x2D)<<8 | self.i2cReg("r",0x2C))*0.00875

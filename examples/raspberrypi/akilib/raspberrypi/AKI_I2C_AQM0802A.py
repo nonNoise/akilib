@@ -1,3 +1,9 @@
+############################################################
+#The MIT License (MIT)
+#Copyright (c) 2015 Yuta Kitagami
+#Project:    https://github.com/nonNoise/akilib
+############################################################
+
 import smbus
 import time
 
@@ -47,7 +53,7 @@ class AKI_I2C_AQM0802A:
     def ClearDisplay(self):
         # "Clear Display"
         self.i2cReg("w",0x00,0x01)
-        #time.sleep(0.1)
+        time.sleep(0.1)
 
     def WritePos(self,a,b):        
         if a ==0:
@@ -58,7 +64,7 @@ class AKI_I2C_AQM0802A:
 
     def WriteChar(self,c):
         self.i2cReg("w",0x40,c )
-	time.sleep(0.3)
+        time.sleep(0.3)
 
     def WriteStr(self,s,t=0):
         #print s

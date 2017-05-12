@@ -41,3 +41,5 @@ if  ("armv7l" or "armv6l")  in plat :
     from raspberrypi.AKI_I2C_ADT7410 import AKI_I2C_ADT7410
     #from raspberrypi.AKI_GPIO_SC1602BSLB import AKI_GPIO_SC1602BSLB
     from raspberrypi.AKI_I2C_S11059 import AKI_I2C_S11059
+    from raspberrypi.AKI_I2C_SHT31 import AKI_I2C_SHT31			#2017.05.12 release
+
