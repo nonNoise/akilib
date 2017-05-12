@@ -1,8 +1,8 @@
-﻿import AKI_I2C_SHT31
+﻿from akilib import AKI_I2C_SHT31
 from akilib import AKI_I2C_AQM0802A
 import time
 
-i2c = AKI_I2C_SHT31.AKI_I2C_SHT31()
+i2c = AKI_I2C_SHT31()
 i2c.I2C_ADDR = 0x44
 i2c.BussReset()
 i2c.SoftReset()
